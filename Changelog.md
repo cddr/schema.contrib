@@ -1,24 +1,26 @@
 # Changelog
 
-## Unreleased Changes
-
+## Unreleased Changes (fix-changelog-formatting)
+ * Fix indentation in gitlog-to-changelog script
  * Use the markdown codox plugin to support links in doc strings
  * Add basic HAL types
-
-Add schema vars for the basic HAL types of Resource, Link, and
-Curie. See the [HAL Specification][hal] for full details
-
-[hal]: http://tools.ietf.org/html/draft-kelly-json-hal-06
+      
+   Add schema vars for the basic HAL types of Resource, Link, and
+   Curie. See the [HAL Specification][hal] for full details
+   
+   [hal]: http://tools.ietf.org/html/draft-kelly-json-hal-06
  * Add support for generating API documentation
-
-To generate project docs using codox, run
-
-    $ lein doc
-
-On pushes to the github repo, travis will attempt to generate the docs
-and the tests will fail if [test/tooling.sh]
-(https://github.com/cddr/schema.contrib/blob/master/test/tooling.sh)
-returns a non-zero exit code
+      
+   To generate project docs using codox, run
+   
+   ```
+       $ lein doc
+   ```
+   
+   On pushes to the github repo, travis will attempt to generate the docs
+   and the tests will fail if [test/tooling.sh]
+   (https://github.com/cddr/schema.contrib/blob/master/test/tooling.sh)
+   returns a non-zero exit code
  * Add test for generating documentation
  * Fix README formatting
  * Make the changelog a little prettier
