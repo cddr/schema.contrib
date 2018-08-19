@@ -65,7 +65,7 @@ data is old enough to buy booze. For more examples, see the tests
 ### integrity.walkers
 
 Schema walker generators take a schema as input, and use it to return a
-function that walks input data in-step with the the corresponding schema. For
+function that walks input data in-step with the corresponding schema. For
 example, the `lookup` walker replaces "references" in the input document
 with the result of looking them up in an external data source. For example
 usage, see the tests
